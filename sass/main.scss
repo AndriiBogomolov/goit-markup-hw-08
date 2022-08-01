@@ -1,5 +1,9 @@
 @import './base/reset';
+@import './base/normalize';
+@import './base/fonts';
 @import './components.scss/container';
+@import './components.scss/list';
+
 @import './utils/variables';
 @import './utils/hidden';
 
