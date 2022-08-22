@@ -1,14 +1,16 @@
-ul {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.main-nav .nav {
+.main-nav {
     display: flex;
     align-items: center;
+}
+
+.nav {
+    display: none;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        
+    }
 }
 
 .nav__studio,
@@ -24,6 +26,7 @@ ul {
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
+
     &:hover,
     &:focus {
         color: var(--title-text-color);
@@ -35,12 +38,18 @@ ul {
     color: var(--accent-color);
 }
 
+.current {
+    position: relative;
+    color: var(--title-text-color);
+}
+
 .current::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 4px;
     background-color: var(--title-text-color);
     bottom: -1px;
+    display: block;
     width: 100%;
     border-radius: 2px;
     right: 0;

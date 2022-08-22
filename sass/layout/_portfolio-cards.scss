@@ -1,12 +1,45 @@
+// .cards-content {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-right: -30px;
+// }
+
 .cards-content {
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        // gap: 30px;
     }
+
+    // .card-item:hover,
+    // .card-item:focus {
+    //     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    //         1px 4px 6px rgba(0, 0, 0, 0.16);
+    // }
 }
 
 .card-item {
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);
+    }
+
+    // &:not(:last-child) {
+    //     @media screen and (max-width: 767px) {
+    //         margin-bottom: 30px;
+    //     }
+}
+
+
+
+
+
+
+.card-item {
+    display: flex;
     flex-basis: calc(100% / 3 - var(--typical-gap));
     margin-bottom: var(--typical-gap);
     margin-right: var(--typical-gap);
@@ -19,23 +52,10 @@
     &:nth-last-child(-n+3) {
         margin-bottom: 0;
     }
-
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 30px) / 2);
-    }
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 60px) / 3);
-    }
-    
-}
-
-.card-item:not(:last-child) {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 30px;
-    }
 }
 
 .item-content {
+    flex-grow: 1;
     padding: 20px 24px;
     border-bottom: 1px solid #ECECEC;
     border-left: 1px solid #ECECEC;
@@ -44,6 +64,17 @@
 
 .main-title {
     margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.main-work {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
 }
 
 .card-item:hover .action-cover-text {
@@ -54,38 +85,33 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    opacity: 0;
-
-    @media screen and (max-width: 479px) {
-        font-size: 14px;
-        padding: 24px 15px;
-    }
-    
-    @media screen and (min-width: 480px) {
-        font-size: 18px;
-        padding: 77px 24px;
-    }
-    
-    @media screen and (min-width: 768px) {
-        font-size: 18px;
-        padding: 49px 24px 77px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        font-size: 18px;
-        padding: 63px 24px;
-    }
-
+    // padding: 63px 24px;
     height: 100%;
-    font-size: 18px;
-
+    // font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--white-color);
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 479px) {
+      font-size: 14px;
+      padding: 24px 15px;
+    }
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+      padding: 77px 24px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      padding: 49px 24px 77px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+      padding: 63px 24px;
+    }
+
 }
 
 .action-cover {

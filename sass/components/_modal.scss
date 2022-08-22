@@ -3,23 +3,24 @@
     pointer-events: none;
     visibility: hidden;
     transform: rotate(360deg) scale(0.1) translate(150px);
-    // transition: 1000ms, visibility 0s 1s;
+    transition: 1000ms, visibility 0s 1s;
 }
 
 .backdrop {
     position: fixed;
-    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 1000ms, cubic-bezier(0.4, 0, 0.2, 1) visibility 1s 0s;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    overflow-y: scroll;
 }
 
 .modal {
     display: flex;
+    padding: 40px;
     flex-direction: row-reverse;
     position: absolute;
     top: 50%;
@@ -27,9 +28,9 @@
     transform: translate(-50%, -50%);
     min-width: 528px;
     min-height: 581px;
-    overflow: auto;
     background-color: var(--white-color);
     border-radius: 4px;
+    overflow: auto;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     @media screen and (max-width: 479px) {
@@ -54,11 +55,10 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: var(--white-color);
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0;
     &:hover {
         fill: var(--title-text-color);
@@ -78,12 +78,8 @@
 }
 
 .modal-form {
-    background-color: var(--white-color);
+    position: absolute;
     padding: 40px;
-
-    @media screen and (max-width: 479px) {
-        padding: 20px;
-    }
 }
 
 .modal-form-title {
@@ -94,18 +90,25 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    width: 370px;
+    height: 60px;
 
     @media screen and (max-width: 479px) {
         text-align: left;
-        max-width: 240px;
+    }
+
+    @media screen and (min-width: 1199px) {
+        width: 448px;
+        height: 23px;
     }
 
     @media screen and (min-width: 1200px) {
-        line-height: calc(23 / 20);
+        line-height: 1.15;
     }
 }
 
 .form-field {
+    position: relative;
     margin-bottom: 10px;
 }
 
@@ -121,9 +124,8 @@
 }
 
 .label-input {
-    outline: transparent;
     height: 40px;
-    width: 100%;
+    width: 370px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 42px;
@@ -135,9 +137,10 @@
         border-color: var(--title-text-color);
     }
 
-    .form-field:focus-within & {
-      border-color: var(--title-text-color);
-  }
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        hight: 40px;        
+    }
 }
 
 .label-input:hover+.form-icon,
@@ -158,7 +161,6 @@
 }
 
 .label-textarea {
-    outline: transparent;
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -188,8 +190,13 @@
 }
 
 .checkbox-input {
-    position: absolute;
     display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-input {
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -199,9 +206,6 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-policy {
@@ -210,25 +214,27 @@
 }
 
 .privacy-text {
-
-    @media screen and (max-width: 1199px) {
-        width: max-content;
-    }
-
     display: flex;
     justify-content: center;
 
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
     background-color: var(--white-color);
 
+    @media screen and (max-width: 1199px) {
+        width: max-content;
+    }
+
     @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: calc(24 / 14);
-  }
+        font-size: 14px;
+        line-height: 1.7142857143;
+    }
+}
+
+span {
+    color: #000000;
 }
 
 .checkbox-input:checked+.privacy-text span {
@@ -260,6 +266,12 @@
 
 .checkbox-icon {
     fill: transparent;
+}
+
+@media screen and (max-width: 479px) {
+    .checkbox-field {
+        display: flex;
+    }
 }
 
 .modal-form-button {
@@ -300,4 +312,8 @@
 
 .form-field:focus-within .label-input {
     border-color: var(--title-text-color);
+}
+
+.button {
+    cursor: pointer;
 }
