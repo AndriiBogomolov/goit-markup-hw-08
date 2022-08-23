@@ -55,7 +55,7 @@
 
 .header-list {
     display: flex;
-    // position: relative;
+    position: relative;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -69,11 +69,16 @@
 .header-connect {
     display: none;
     margin-left: auto;
-    // align-items: center;
-    // justify-content: center;
+    align-items: center;
+    justify-content: center;
     @media screen and (min-width: 768px) {
         display: block;
-        
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: block;
+        align-items: center;
+        justify-content: center;
     }
 }
 

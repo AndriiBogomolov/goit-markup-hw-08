@@ -800,6 +800,7 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -813,10 +814,27 @@ span {
 .header-connect {
   display: none;
   margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .header-connect {
     display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-connect {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -835,26 +853,23 @@ span {
 }
 
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .nav {
+@media screen and (max-width: 767px) {
+  .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav__studio,
@@ -903,27 +918,27 @@ span {
 }
 
 .contact-list {
-  display: none;
-  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  row-gap: 10px;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-left: 96px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .contact-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    row-gap: 10px;
-    font-size: 12px;
-    line-height: 1.17;
-    margin-left: 96px;
+    display: none;
   }
 }
 @media screen and (mix-width: 1200px) {
   .contact-list {
+    margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -935,6 +950,7 @@ span {
             align-items: center;
     gap: 30px;
     margin-bottom: 64px;
+    margin-left: 315px;
   }
 }
 
