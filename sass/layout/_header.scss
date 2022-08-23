@@ -55,7 +55,15 @@
 
 .header-list {
     display: flex;
-    position: relative;
+    // position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    @media (max-width: 767px) {
+        display: none;
+        
+    }
 }
 
 .header-connect {

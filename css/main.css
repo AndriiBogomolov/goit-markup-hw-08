@@ -657,9 +657,9 @@ span {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 0;
   bottom: none;
@@ -697,8 +697,14 @@ span {
   padding: 32px;
   background-color: #FFFFFF;
   z-index: 999;
+  text-align: left;
+  font-size: 20px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -794,7 +800,14 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+@media (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
 }
 
 .header-connect {
