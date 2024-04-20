@@ -280,7 +280,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -352,7 +351,6 @@ ul {
 }
 
 .modal-form {
-  position: absolute;
   padding: 40px;
 }
 
@@ -385,7 +383,6 @@ ul {
 }
 
 .form-field {
-  position: relative;
   margin-bottom: 10px;
 }
 
@@ -771,10 +768,6 @@ span {
   margin-right: 0;
 }
 
-.main {
-  margin: 94px 200px;
-}
-
 .header {
   height: 60px;
   background-color: var(--white-color);
@@ -1154,9 +1147,18 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .main-content {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: var(--next-typical-gap);
+    padding-bottom: var(--next-typical-gap);
   }
+}
+
+.cards-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 @media screen and (min-width: 768px) {
