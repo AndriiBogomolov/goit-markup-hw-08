@@ -1,48 +1,60 @@
 .contact-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    row-gap: 10px;
-    font-size: 12px;
-    line-height: 1.17;
-    margin-left: 96px;
+    // width: 100%;
+    margin-left: auto;
+    // flex-wrap: wrap;
+    // justify-content: flex-start;
+    // row-gap: 10px;
+    // font-size: 12px;
+    // line-height: 1.17;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-
-    @media screen and (mix-width: 1200px) {
-        margin-left: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        margin-bottom: 64px;
-        margin-left: 315px;
-    }
 }
 
+// @media screen and (max-width: 767px) {
+//     display: none;
+//     margin-bottom: 64px;
+// }
+
+// @media screen and (mix-width: 1200px) {
+//     margin-left: auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 30px;
 
 
-// .contact-list .contact__item+.contact__item {
+// }
+
+
+// .contact-list .contact__item + .contact__item {
 //     margin-left: auto;
 //     @media screen and (min-width: 1200px) {
-//         margin-left: 50px;
+//         margin-left: 30px;
 //     }
     
 // }
 
-// .contact-list .contact__item + .contact__item {
-//     margin-left: 50px;
+// .contact-list .contact-item + .contact-item {
+//     margin-left: 30px;
 // }
 
-// .contact-list .contact__item+.contact__item {
-//     margin-left: 50px;
-// }
-
-.contact__item {
-    box-sizing: border-box;
+.contact-list .contact-item + .contact-item {
+    margin-left: 50px;
 }
+
+.contact-item {
+    box-sizing: border-box;
+
+}
+
+.contact-tel__link {
+    margin-left: 30px;
+}
+
+// .contact__item {
+//     box-sizing: border-box;
+//     margin-left: 90px;
+// }
 
 .contact-icon {
     position: relative;
@@ -68,8 +80,8 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
-    // padding-top: 32px;
-    // padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     &:hover,
     &:focus {
         color: var(--title-text-color);
