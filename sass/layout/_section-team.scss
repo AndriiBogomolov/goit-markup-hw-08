@@ -1,22 +1,19 @@
-// .team-members {
-//     display: block;
-
 .team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
     padding: 0 180px;
   }
 }
 
 .team-list__item {
+  outline: 1px solid red;
   flex-direction: column;
   align-items: center;
   background: var(--white-color);
@@ -32,7 +29,7 @@
     width: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 160px) / 4);
   }
 }
 

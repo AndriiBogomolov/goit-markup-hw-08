@@ -46,7 +46,7 @@
   position: relative;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 9px;
   fill: currentColor;
   align-items: center;
   vertical-align: middle;
@@ -77,4 +77,21 @@
 .contact-tel__link:hover .contact-icon,
 .contact-tel__link:focus .contact-icon {
   fill: var(--title-text-color);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-list {
+    display: block;
+  }
+
+  .contact-mail__link,
+  .contact-tel__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 114px;
+  }
+
+  .header-list {
+    margin-left: 93px;
+  }
 }

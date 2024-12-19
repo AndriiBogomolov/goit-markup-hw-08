@@ -1,3 +1,8 @@
+// .logo {
+//   width: 134px;
+//   height: 28px;
+// }
+
 .logo-head {
   font-family: var(--second-font);
   font-weight: 700;
@@ -6,9 +11,14 @@
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-right: 93px;
-  //   margin-left: 215px;
 }
 
 .accent1 {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+  .logo-head {
+    margin-right: 0;
+  }
 }
