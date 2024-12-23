@@ -1,78 +1,72 @@
 .hero {
-  background-image: linear-gradient var(--bg-gradi),
-    url(../images/background/bg-mob1x-min.jpg);
+  max-width: 1600px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top: 1px solid #ececec;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient var(--bg-gradi),
-      url(../images/background/bg-mob2x-min.jpg);
+  // mobile screen
+  background-image: linear-gradient(var(--bg-gradi)),
+    url(../../images/background/bg-mob1x-min.jpg);
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    background-image: linear-gradient(var(--bg-gradi)),
+      url(../../images/background/bg-tab1x-min.jpg);
   }
 
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 258dpi),
-    (min-resolution: 3dppx) {
-    background-image: linear-gradient var(--bg-gradi),
-      url(../images/background/bg-mob3x-min.jpg);
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    background-image: linear-gradient(var(--bg-gradi)),
+      url(../../images/background/bg-desk1x-min.jpg);
+  }
+
+  // Image support for resolution density
+  @each $density, $image in ('2x': 'bg-mob2x-min.jpg', '3x': 'bg-mob3x-min.jpg')
+  {
+    @media (min-device-pixel-ratio: #{$density}),
+      (min-resolution: calc(#{$density} * 96dpi)) {
+      background-image: linear-gradient(var(--bg-gradi)),
+        url(../../images/background/#{$image});
+    }
   }
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient var(--bg-gradi),
-      url(../images/background/bg-tab1x-min.jpg);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient var(--bg-gradi),
-        url(../images/background/bg-tab2x-min.jpg);
-    }
-
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 258dpi),
-      (min-resolution: 3dppx) {
-      background-image: linear-gradient var(--bg-gradi),
-        url(../images/background/bg-tab3x-min.jpg);
+    @each $density,
+      $image in ('2x': 'bg-tab2x-min.jpg', '3x': 'bg-tab3x-min.jpg')
+    {
+      @media (min-device-pixel-ratio: #{$density}),
+        (min-resolution: calc(#{$density} * 96dpi)) {
+        background-image: linear-gradient(var(--bg-gradi)),
+          url(../../images/background/#{$image});
+      }
     }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: linear-gradient var(--bg-gradi),
-      url(../images/background/bg-desk1x-min.jpg);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient var(--bg-gradi),
-        url(../images/background/bg-desk2x-min.jpg);
-    }
-
-    @media (min-device-pixel-ratio: 3),
-      (min-resolution: 258dpi),
-      (min-resolution: 3dppx) {
-      background-image: linear-gradient var(--bg-gradi),
-        url(../images/background/bg-desk3x-min.jpg);
+    @each $density,
+      $image in ('2x': 'bg-desk2x-min.jpg', '3x': 'bg-desk3x-min.jpg')
+    {
+      @media (min-device-pixel-ratio: #{$density}),
+        (min-resolution: calc(#{$density} * 96dpi)) {
+        background-image: linear-gradient(var(--bg-gradi)),
+          url(../../images/background/#{$image});
+      }
     }
   }
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1630px;
-
+  // adaptive padding
   @media screen and (min-width: 320px) and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
-
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
-  text-align: center;
-
-  background-color: #2f303a;
 }
-
-/* Mobile first CSS */
 
 .hero-title {
   display: inline-block;
@@ -95,62 +89,28 @@
 }
 
 .hero-title__button {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
-  background-color: var(--title-text-color);
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: center;
   text-decoration: none;
-  border: 1px solid transparent;
-  margin: 0 auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  width: 200px;
-  height: 50px;
-  align-items: center;
   color: var(--white-color);
+  background-color: var(--title-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: #188ce8;
-    color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
   }
-}
-
-.overlay {
-  max-width: 480px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #c4c4c4;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../../images/hero-background/bg_hero_desktop.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    height: 400px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    height: 600px;
-    max-width: 1630px;
-  }
-}
-
-.section-button {
-  color: var(--white-color);
-  cursor: pointer;
 }

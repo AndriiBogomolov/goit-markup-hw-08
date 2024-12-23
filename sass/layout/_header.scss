@@ -1,36 +1,19 @@
-.header-container {
-  padding: 0 15px 0 15px;
-}
-@media screen and (max-width: 768px) {
-  .header-container {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .nav-list__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .nav-list__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-list__item:not(:last-child) {
-    margin-right: 50px;
-    padding: 0 215px 0 215px;
-  }
-}
-
-.header-container {
-  display: flex;
-  width: 100%;
+.header > .container {
   align-items: center;
-  height: 80px;
+  display: flex;
+  height: 60px;
+  background-color: var(--white-color);
+  justify-content: center;
+  // width: 100%;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
 }
 
 .header-list {
@@ -50,44 +33,6 @@
   }
 }
 
-// .main {
-//     margin: 94px 200px;
-// }
-
-.header {
-  height: 60px;
-  background-color: var(--white-color);
-
-  @media screen and (min-width: 768px) {
-    border-bottom: 1px solid #ececec;
-    height: 80px;
-  }
-}
-
-.header > .container {
-  @media screen and (min-width: 768px) {
-    height: 80px;
-  }
-
-  align-items: center;
-  display: flex;
-}
-
-// .header>.container {
-//     border-bottom: 1px solid #ECECEC;
-//     width: 100%;
-//     height: 60px;
-
-//     @media screen and (min-width: 768px) {
-//         height: 80px;
-//     }
-// }
-
-// .header .container {
-//     display: flex;
-//     align-items: center;
-// }
-
 .header-list {
   display: flex;
   position: relative;
@@ -100,17 +45,10 @@
   }
 }
 
-.header-item {
-  margin-right: 30px;
-}
-
-.main-nav {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .main-nav {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -119,30 +57,5 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 }
-
-// .header-connect {
-//   display: flex;
-// margin-left: auto;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// @media screen and (min-width: 768px) {
-//     .header .container {
-//         height: 80px;
-//     }
-// }
-
-// .header-tab {
-//     display: flex;
-//     width: 100%;
-// }
-
-// @media screen and (max-width: 767px) {
-//     .header-tab {
-//         display: none;
-//     }
-// }

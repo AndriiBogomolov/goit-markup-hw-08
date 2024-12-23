@@ -3,7 +3,6 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--white-color);
   color: var(--primery-text-color);
-  letter-spacing: 0.03em;
 }
 
 body.modal-open {
@@ -20,11 +19,11 @@ h6 {
   margin: 0;
 }
 
+ol,
 ul,
 li {
   margin: 0;
-  padding-left: 0;
-  display: list-item;
+  padding: 0;
 }
 
 ul {
@@ -40,8 +39,6 @@ ul {
 *::after {
   box-sizing: border-box;
 }
-
-// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
 // .no-scroll {
 //     overflow: hidden;
