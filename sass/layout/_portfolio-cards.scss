@@ -1,52 +1,29 @@
-.portfolio-content {
-  padding: 0 215px;
-}
-
-.cards-content {
+.cards-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
-  //   outline: 1px solid red;
 }
 
-// .cards-content {
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: 30px;
-//   }
-// }
-
-// .card-item {
-//   @media screen and (min-width: 768px) {
-// width: calc((100% - 30px) / 2);
-//   }
-
-// @media screen and (min-width: 1200px) {
-//   .card-item {
-// width: calc((100% - 60px) / 3);
-//   }
-// }
-
 .card-item {
-  flex-basis: calc((100% - 20px * 3) / 3);
-  outline: 1px solid red;
-  //   box-sizing: border-box;
-  //   display: flex;
-  //   flex-flow: column;
-  //   position: relative;
-  //   overflow: hidden;
-  //   &:nth-child(3n) {
-  // margin-right: 0;
-  //   }
+  box-sizing: border-box;
+  display: flex;
+  width: 450px;
+  flex-flow: column;
+  position: relative;
+  overflow: hidden;
+
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  //   &:nth-last-child(-n + 3) {
-  // margin-bottom: 0;
-  //   }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .item-content {
@@ -54,7 +31,7 @@
   border-bottom: 1px solid #ececec;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
-  outline: 1px solid red;
+  flex-grow: 1;
 }
 
 .main-title {
@@ -79,7 +56,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
+  width: 100%;
   padding: 63px 24px;
   height: 100%;
   font-size: 18px;
@@ -89,23 +66,6 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  //   @media screen and (max-width: 479px) {
-  //     font-size: 14px;
-  //     padding: 24px 15px;
-  //   }
-  //   @media screen and (min-width: 480px) {
-  //     font-size: 18px;
-  //     padding: 77px 24px;
-  //   }
-  //   @media screen and (min-width: 768px) {
-  //     font-size: 18px;
-  //     padding: 49px 24px 77px;
-  //   }
-  //   @media screen and (min-width: 1200px) {
-  //     font-size: 18px;
-  //     padding: 63px 24px;
-  //   }
 }
 
 .action-cover {

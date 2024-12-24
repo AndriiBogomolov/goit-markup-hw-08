@@ -1,24 +1,17 @@
 .container {
-  // Mobile screen first
   // min-width: 320px;
   // max-width: 1600px;
   padding: 0 15px;
   margin: 0 auto;
   // border: 1px solid tomato;
 
-  // breakpoint 480px for mobile screen
-
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
 
-  // breakpoint 768px for tablet screen
-
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
-
-  // breakpoint 1200px for tablet screen
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;

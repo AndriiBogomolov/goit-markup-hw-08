@@ -24,12 +24,11 @@
 
 .modal {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -30%);
-  width: 450px;
-  min-height: 581px;
   width: calc(100% - 30px);
+  min-height: 581px;
   background-color: var(--white-color);
   border-radius: 4px;
   padding: 40px;
@@ -78,10 +77,6 @@
   margin-bottom: 30px;
 }
 
-// .modal-form {
-//   padding: 40px;
-// }
-
 .modal-form-title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -114,7 +109,6 @@
 .label-title {
   display: block;
   margin-bottom: 4px;
-
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);

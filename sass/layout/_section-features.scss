@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 30px;
   // align-items: center;
-  // margin: 0 auto;
+  margin: 0 auto;
 
   @media screen and (min-width: 1200px) {
     padding-top: var(--next-typical-gap);
@@ -14,14 +14,6 @@
 .features {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    // justify-content: center;
-  }
 }
 
 .feature__icon {
