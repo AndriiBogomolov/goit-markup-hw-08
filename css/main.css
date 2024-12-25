@@ -270,7 +270,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   width: 100%;
-  max-width: 370px;
   height: 60px;
 }
 @media screen and (min-width: 1199px) {
@@ -303,7 +302,6 @@ ul {
   outline: none;
   height: 40px;
   width: 100%;
-  max-width: 370px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 42px;

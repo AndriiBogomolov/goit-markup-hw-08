@@ -28,7 +28,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 30px);
-  // width: 450px;
   max-height: 90vh;
   background-color: var(--white-color);
   border-radius: 4px;
@@ -92,7 +91,6 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
   width: 100%;
-  max-width: 370px;
   height: 60px;
 
   @media screen and (min-width: 1199px) {
@@ -123,7 +121,6 @@
   outline: none;
   height: 40px;
   width: 100%;
-  max-width: 370px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 42px;
