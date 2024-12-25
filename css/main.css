@@ -984,57 +984,57 @@ span {
   background-position: center;
   background-size: cover;
   border-top: 1px solid #ececec;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../../images/background/bg-mob1x-min.jpg);
-  background-image: linear-gradient(var(--bg-gradi)), url(../../images/background/bg-mob1x-min.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../images/background/bg-mob1x-min.jpg);
+  background-image: linear-gradient(var(--bg-gradi)), url(../images/background/bg-mob1x-min.jpg);
 }
 @media screen and (min-width: 768px) {
   .hero {
     height: 400px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../../images/background/bg-tab1x-min.jpg);
-    background-image: linear-gradient(var(--bg-gradi)), url(../../images/background/bg-tab1x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../images/background/bg-tab1x-min.jpg);
+    background-image: linear-gradient(var(--bg-gradi)), url(../images/background/bg-tab1x-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../../images/background/bg-desk1x-min.jpg);
-    background-image: linear-gradient(var(--bg-gradi)), url(../../images/background/bg-desk1x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../images/background/bg-desk1x-min.jpg);
+    background-image: linear-gradient(var(--bg-gradi)), url(../images/background/bg-desk1x-min.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2x), (min-resolution: calc(2x * 96dpi)) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../../images/background/bg-mob2x-min.jpg);
-    background-image: linear-gradient(var(--bg-gradi)), url(../../images/background/bg-mob2x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../images/background/bg-mob2x-min.jpg);
+    background-image: linear-gradient(var(--bg-gradi)), url(../images/background/bg-mob2x-min.jpg);
   }
 }
 @media (min-device-pixel-ratio: 3x), (min-resolution: calc(3x * 96dpi)) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../../images/background/bg-mob3x-min.jpg);
-    background-image: linear-gradient(var(--bg-gradi)), url(../../images/background/bg-mob3x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../images/background/bg-mob3x-min.jpg);
+    background-image: linear-gradient(var(--bg-gradi)), url(../images/background/bg-mob3x-min.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2x), screen and (min-width: 768px) and (min-resolution: calc(2x * 96dpi)) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../../images/background/bg-tab2x-min.jpg);
-    background-image: linear-gradient(var(--bg-gradi)), url(../../images/background/bg-tab2x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../images/background/bg-tab2x-min.jpg);
+    background-image: linear-gradient(var(--bg-gradi)), url(../images/background/bg-tab2x-min.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 3x), screen and (min-width: 768px) and (min-resolution: calc(3x * 96dpi)) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../../images/background/bg-tab3x-min.jpg);
-    background-image: linear-gradient(var(--bg-gradi)), url(../../images/background/bg-tab3x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../images/background/bg-tab3x-min.jpg);
+    background-image: linear-gradient(var(--bg-gradi)), url(../images/background/bg-tab3x-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2x), screen and (min-width: 1200px) and (min-resolution: calc(2x * 96dpi)) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../../images/background/bg-desk2x-min.jpg);
-    background-image: linear-gradient(var(--bg-gradi)), url(../../images/background/bg-desk2x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../images/background/bg-desk2x-min.jpg);
+    background-image: linear-gradient(var(--bg-gradi)), url(../images/background/bg-desk2x-min.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3x), screen and (min-width: 1200px) and (min-resolution: calc(3x * 96dpi)) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../../images/background/bg-desk3x-min.jpg);
-    background-image: linear-gradient(var(--bg-gradi)), url(../../images/background/bg-desk3x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-gradi))), url(../images/background/bg-desk3x-min.jpg);
+    background-image: linear-gradient(var(--bg-gradi)), url(../images/background/bg-desk3x-min.jpg);
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1199px) {

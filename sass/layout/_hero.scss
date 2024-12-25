@@ -13,18 +13,18 @@
 
   // mobile screen
   background-image: linear-gradient(var(--bg-gradi)),
-    url(../../images/background/bg-mob1x-min.jpg);
+    url(../images/background/bg-mob1x-min.jpg);
 
   @media screen and (min-width: 768px) {
     height: 400px;
     background-image: linear-gradient(var(--bg-gradi)),
-      url(../../images/background/bg-tab1x-min.jpg);
+      url(../images/background/bg-tab1x-min.jpg);
   }
 
   @media screen and (min-width: 1200px) {
     height: 600px;
     background-image: linear-gradient(var(--bg-gradi)),
-      url(../../images/background/bg-desk1x-min.jpg);
+      url(../images/background/bg-desk1x-min.jpg);
   }
 
   // Image support for resolution density
@@ -33,7 +33,7 @@
     @media (min-device-pixel-ratio: #{$density}),
       (min-resolution: calc(#{$density} * 96dpi)) {
       background-image: linear-gradient(var(--bg-gradi)),
-        url(../../images/background/#{$image});
+        url(../images/background/#{$image});
     }
   }
 
@@ -44,7 +44,7 @@
       @media (min-device-pixel-ratio: #{$density}),
         (min-resolution: calc(#{$density} * 96dpi)) {
         background-image: linear-gradient(var(--bg-gradi)),
-          url(../../images/background/#{$image});
+          url(../images/background/#{$image});
       }
     }
   }
@@ -56,7 +56,7 @@
       @media (min-device-pixel-ratio: #{$density}),
         (min-resolution: calc(#{$density} * 96dpi)) {
         background-image: linear-gradient(var(--bg-gradi)),
-          url(../../images/background/#{$image});
+          url(../images/background/#{$image});
       }
     }
   }
