@@ -188,16 +188,16 @@ ul {
 
 .modal {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -30%);
-          transform: translate(-50%, -30%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: calc(100% - 30px);
-  min-height: 581px;
+  max-height: 90vh;
   background-color: var(--white-color);
   border-radius: 4px;
   padding: 40px;
-  overflow: auto;
+  overflow-y: auto;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-animation: scaleIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -239,6 +239,16 @@ ul {
   fill: var(--title-text-color);
 }
 
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -259,13 +269,9 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   height: 60px;
-}
-@media screen and (max-width: 479px) {
-  .modal-form-title {
-    text-align: left;
-  }
 }
 @media screen and (min-width: 1199px) {
   .modal-form-title {
@@ -296,7 +302,8 @@ ul {
 .label-input {
   outline: none;
   height: 40px;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 42px;
