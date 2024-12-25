@@ -3,39 +3,21 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-    // padding: 0 180px;
-  }
 }
 
 .team-list__item {
-  // outline: 1px solid red;
   flex-direction: column;
   align-items: center;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  // margin-right: var(--typical-gap);
-  // &:nth-child(4n) {
-  //     margin-right: 0;
-  // }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 22.5px * 4) / 4);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .team-list__item:not(:last-child) {
-    // margin-bottom: 30px;
   }
 }
 
@@ -51,8 +33,6 @@
   color: var(--accent-color);
 
   @media screen and (min-width: 1200px) {
-    // width: 264px;
-    // height: 42px;
     font-size: 36px;
     line-height: 1.16;
     margin-bottom: 50px;
@@ -105,7 +85,6 @@
 }
 
 .card-name {
-  // width: 100%;
   padding-top: var(--typical-gap);
   padding-bottom: var(--typical-gap);
 }
